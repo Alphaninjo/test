@@ -6,7 +6,7 @@
           // Split CSV data into rows
           var rows = data.split('\n');
           // Remove header row if present
-          if (rows.length > 0 && rows[0].startsWith('CH,System,Image')) {
+          if (rows.length > 0 && rows[0].startsWith('CH;System;Image')) {
             rows.shift();
           }
           // Process each row
