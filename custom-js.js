@@ -47,7 +47,7 @@
     function populateCardGrid(cardData) {
       var cardGrid = document.getElementById("cardGrid");
       cardData.forEach(function(card) {
-        var cardElement = createCard(card.chapter card.System, card.Image);
+        var cardElement = createCard(card.chapter, card.System, card.Image);
         cardGrid.appendChild(cardElement);
       });
     }
