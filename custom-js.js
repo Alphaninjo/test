@@ -6,13 +6,13 @@
           // Split CSV data into rows
           var rows = data.split('\n');
           // Remove header row if present
-          if (rows.length > 0 && rows[0].startsWith('chapter;System;Image')) {
+          if (rows.length > 0 && rows[0].startsWith('chapter,System,Image')) {
             rows.shift();
           }
           // Process each row
           var cardData = rows.map(row => {
-            var columns = row.split(';');
-            return { chapter: columns[0], System: columns[1], Image: columns[2]};
+            var columns = row.split(',');
+            return { chapter: columns[0], System: columns[1], Image: columns[2] };
           });
           callback(cardData);
         })
