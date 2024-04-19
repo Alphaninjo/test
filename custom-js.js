@@ -23,7 +23,7 @@
     function createCard(chapter, System, Image) {
       var card = document.createElement("div");
       var imgUrl = "url(" + Image + chapter + ")";
-      card.classList.add("col-md-12, "card");
+      card.classList.add("col-md-12", "card");
       card.style.background = imgUrl;
       card.style.backgroundPosition = "center";
       card.style.backgroundSize = "cover";
