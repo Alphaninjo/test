@@ -6,13 +6,13 @@
           // Split CSV data into rows
           var rows = data.split('\n');
           // Remove header row if present
-          if (rows.length > 0 && rows[0].startsWith('CH;System;Image')) {
+          if (rows.length > 0 && rows[0].startsWith('chapter;System;Image')) {
             rows.shift();
           }
           // Process each row
           var cardData = rows.map(row => {
             var columns = row.split(';');
-            return { CH: columns[0], System: columns[1], Image: columns[2]};
+            return { chapter: columns[0], System: columns[1], Image: columns[2]};
           });
           callback(cardData);
         })
@@ -20,9 +20,9 @@
     }
 
     // Function to create a card element
-    function createCard(CH, System, Image) {
+    function createCard(chapter, System, Image) {
       var card = document.createElement("div");
-      var imgUrl = "url(" + Image + CH + ")";
+      var imgUrl = "url(" + Image + chapter + ")";
       card.classList.add("col-md-4", "mb-4", "card");
       card.style.background = imgUrl;
       card.style.backgroundPosition = "center";
@@ -36,7 +36,7 @@
       card.innerHTML = `
           <div class="card" style="min-width: 100%; min-height: 100%; background-color: transparent ; border: transparent; " >
           <div class="card-body">
-            <h5 class="card-title" style="text-align: center; color: #FFFFFF; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">${CH} ${System}</h5>
+            <h5 class="card-title" style="text-align: center; color: #FFFFFF; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">${chapter} ${System}</h5>
             </div>
         </div>
       `;
