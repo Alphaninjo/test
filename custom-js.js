@@ -23,7 +23,7 @@
     function createCard(chapter, System, Image) {
       var card = document.createElement("div");
       var imgUrl = "url(" + Image + chapter + ")";
-      card.classList.add("col-md-4", "mb-4", "card");
+      card.classList.add("col-md-3", "mb-4", "card");
       card.style.background = imgUrl;
       card.style.backgroundPosition = "center";
       card.style.backgroundSize = "cover";
@@ -47,7 +47,7 @@
     function populateCardGrid(cardData) {
       var cardGrid = document.getElementById("cardGrid");
       cardData.forEach(function(card) {
-        var cardElement = createCard(card.name, card.content);
+        var cardElement = createCard(card.chapter card.System, card.Image);
         cardGrid.appendChild(cardElement);
       });
     }
