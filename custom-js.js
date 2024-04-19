@@ -23,6 +23,7 @@
     function createCard(CH, System, Image) {
       var card = document.createElement("div");
       var imgUrl = "url(" + Image + CH + ")";
+        var title = CH + " - " + System;
       card.classList.add("col-md-4", "mb-4", "card");
       card.style.background = imgUrl;
       card.style.backgroundPosition = "center";
@@ -36,7 +37,7 @@
       card.innerHTML = `
           <div class="card" style="min-width: 100%; min-height: 100%; background-color: transparent ; border: transparent; " >
           <div class="card-body">
-            <h5 class="card-title" style="text-align: center; color: #FFFFFF; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">${CH} - ${System}</h5>
+            <h5 class="card-title" style="text-align: center; color: #FFFFFF; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">${title}</h5>
             </div>
         </div>
       `;
