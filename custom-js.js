@@ -23,7 +23,6 @@
     function createCard(CH, System, Image) {
       var card = document.createElement("div");
       var imgUrl = "url(" + Image + CH + ")";
-        var title = CH + " - " + System;
       card.classList.add("col-md-4", "mb-4", "card");
       card.style.background = imgUrl;
       card.style.backgroundPosition = "center";
