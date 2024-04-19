@@ -1,28 +1,28 @@
 chapter,System,Image
 00,Air Vehicle General ,\images\cards\
 21,Environmental Control System,\images\cards\
-22;Autoflight System;\images\cards\
-23;Communication;\images\cards\
-24;Electrical Power;\images\cards\
-25;Equipment and furnishings;\images\cards\
-26;Fire protection;\images\cards\
-28;Fuel system;\images\cards\
-29;Hydraulic system;\images\cards\
-29A;Ramp;\images\cards\
-30;Ice & Rain Protection System;\images\cards\
-31;Indicating / Recording Systems;\images\cards\
-31A;Emergency Avionic Systems (EAS);\images\cards\
-32;Landing gear;\images\cards\
-33;Lights;\images\cards\
-33;Lighting System;\images\cards\
-34;Navigation Systems (NAV);\images\cards\
-34A;Helicopter Terrain Awereness Warning System (HTAWS);\images\cards\
-34C;Obstacle Proximity LiDAR System (OPLS);\images\cards\
-34D;Area Navigation (RNAV);\images\cards\
-46;Aircraft Management System (AMS);\images\cards\
-46A;Cockpit Display System (CDS);\images\cards\
-46B;Helmet Display Tracking System (HDTS);\images\cards\
-46C;Integrated Digital Map System (IDM);\images\cards\
-53;Airframe structure;\images\cards\
-63B;Rotor brake;\images\cards\
-95;Crew escape and safety system;\images\cards\
+22,Autoflight System,\images\cards\
+23,Communication,\images\cards\
+24,Electrical Power,\images\cards\
+25,Equipment and furnishings,\images\cards\
+26,Fire protection,\images\cards\
+28,Fuel system,\images\cards\
+29,Hydraulic system,\images\cards\
+29A,Ramp,\images\cards\
+30,Ice & Rain Protection System,\images\cards\
+31,Indicating / Recording Systems,\images\cards\
+31A,Emergency Avionic Systems (EAS),\images\cards\
+32,Landing gear,\images\cards\
+33,Lights,\images\cards\
+33,Lighting System,\images\cards\
+34,Navigation Systems (NAV),\images\cards\
+34A,Helicopter Terrain Awereness Warning System (HTAWS),\images\cards\
+34C,Obstacle Proximity LiDAR System (OPLS),\images\cards\
+34D,Area Navigation (RNAV),\images\cards\
+46,Aircraft Management System (AMS),\images\cards\
+46A,Cockpit Display System (CDS),\images\cards\
+46B,Helmet Display Tracking System (HDTS),\images\cards\
+46C,Integrated Digital Map System (IDM),\images\cards\
+53,Airframe structure,\images\cards\
+63B,Rotor brake,\images\cards\
+95,Crew escape and safety system,\images\cards\
