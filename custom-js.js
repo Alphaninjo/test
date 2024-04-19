@@ -12,7 +12,7 @@
           // Process each row
           var cardData = rows.map(row => {
             var columns = row.split(';');
-            return { CH: columns[0], System: columns[1], Image columns[2]};
+            return { CH: columns[0], System: columns[1], Image: columns[2]};
           });
           callback(cardData);
         })
