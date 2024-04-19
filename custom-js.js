@@ -37,7 +37,7 @@
       card.innerHTML = `
           <div class="card" style="min-width: 100%; min-height: 100%; background-color: transparent ; border: transparent; " >
           <div class="card-body">
-            <h5 class="card-title" style="text-align: center; color: #FFFFFF; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">${title}</h5>
+            <h5 class="card-title" style="text-align: center; color: #FFFFFF; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">${CH} ${System}</h5>
             </div>
         </div>
       `;
