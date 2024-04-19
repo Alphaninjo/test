@@ -1,6 +1,6 @@
-chapter;System;Image
-00;Air Vehicle General ;\images\cards\
-21;Environmental Control System;\images\cards\
+chapter,System,Image
+00,Air Vehicle General ,\images\cards\
+21,Environmental Control System,\images\cards\
 22;Autoflight System;\images\cards\
 23;Communication;\images\cards\
 24;Electrical Power;\images\cards\
