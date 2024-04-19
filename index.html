@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Template</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <style>
+    .card {
+      max-width: 20%;
+    }
+
+    .custom-padding {
+      padding: 1vh 0;
+    }
+    .row-height {
+      height: 20vh;
+      min-height: 100px;
+    }
+    .max-width {
+      max-width: 1920px;
+    }
+    .row-2-height {
+      height: 60vh;
+    }
+    .gradient-column {
+      background: linear-gradient(135deg, #FFFFFF 0%, #FFFFFF 55%, #FF4500 56%, #FFFFFF 57%, #FF4500 58%, #FF4500 100%);
+      border-bottom: 5px solid black;
+    }
+    .infographics-text {
+      font-family: monospace;
+      font-size: 3em;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Row 1 -->
+  <div class="container-fluid">
+    <div class="row row-height bg-primary text-white custom-padding gradient-column">
+      <div class="col">
+        <h1 class="infographics-text">AW101</h1>
+        <h1 class="infographics-text">Infographics</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- Padding between rows -->
+  <div class="container-fluid custom-padding"></div>
+
+  <!-- Row 2 -->
+  <div class="container-fluid">
+    <div class="row row-2-height mx-auto max-width custom-padding" style="align-content: center;  ">
+      <div class="container-fluid container">
+    		<div class="row justify-content-center" id="cardGrid"></div>
+  	</div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (optional, if you need Bootstrap JavaScript components) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <script src="custom-js.js"></script>
+</body>
+</html>
