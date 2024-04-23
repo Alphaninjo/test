@@ -39,7 +39,15 @@
             <h5 class="card-title" style="text-align: center; color: #FFFFFF; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">${chapter} ${System}</h5>
             </div>
         </div>
-      `;
+    `; 
+
+          // Legg til klikkfunksjon på kortet
+  card.addEventListener("click", function() {
+    var pageTitle = chapter + " " + System;
+    // Naviger til en ny side med samme navn som kortets tittel
+    window.location.href = pageTitle + ".html";
+  });
+        
       return card;
     }
 
