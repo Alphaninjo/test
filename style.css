@@ -8,8 +8,8 @@
 /* Style for the header */
 .header {
   width: 100%;
-  background-color: #333; /* Change to your desired background color */
-  color: white;
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFFFFF 55%, #FF4500 56%, #FFFFFF 57%, #FF4500 58%, #FF4500 100%);
+      border-bottom: 5px solid black;
   text-align: center;
   padding: 20px 0;
 }
