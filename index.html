@@ -44,7 +44,7 @@
 <body>
 
 <div id="container">
-  <div id="content">
+  <div id="content" style="display: none;">
     <!-- Content 1 -->
     <div id="content1" class="content-section active">
       <h2>Content Section 1</h2>
@@ -76,6 +76,14 @@
 
 <!-- Your JavaScript code here -->
 <script>
+  window.onload = function() {
+    // Show the content buttons div
+    var contentButtons = document.getElementById('content-buttons');
+    if (contentButtons) {
+      contentButtons.style.display = 'block';
+    }
+  };
+
   function showContent(contentId) {
     // Hide all content divs
     var allContentDivs = document.querySelectorAll('.content-section');
