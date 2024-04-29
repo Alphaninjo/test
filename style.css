@@ -1,65 +1,23 @@
-/* Add your CSS styles here */
-body {
+/* Reset some default styles */
+* {
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f0f0f0;
+  box-sizing: border-box;
 }
 
-#container {
-  max-width: 1920px;
+/* Style for the header */
+.header {
   width: 100%;
-  padding: 20px;
+  background-color: #333; /* Change to your desired background color */
+  color: white;
   text-align: center;
+  padding: 20px 0;
 }
 
-.content-section {
-  display: none;
-  margin-bottom: 20px;
+.infographics-text {
+  font-family: monospace;
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  margin-top: 20px;
 }
-
-.content-section.active {
-  display: block;
-}
-
-#content-buttons {
-  margin-bottom: 20px;
-}
-
-button {
-  margin-right: 10px;
-}
-
-.card {
-      max-width: 20%;
-    }
-
-    .custom-padding {
-      padding: 1vh 0;
-    }
-    .row-height {
-      height: 20vh;
-      min-height: 100px;
-    }
-    .max-width {
-      max-width: 1920px;
-    }
-    .row-2-height {
-      min-height: 60vh;
-    }
-    .gradient-column {
-      background: linear-gradient(135deg, #FFFFFF 0%, #FFFFFF 55%, #FF4500 56%, #FFFFFF 57%, #FF4500 58%, #FF4500 100%);
-      border-bottom: 5px solid black;
-    }
-    .infographics-text {
-      font-family: monospace;
-      font-size: 3em;
-      font-weight: bold;
-      color: white;
-      text-align: center;
-      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-      margin-top: 20px;
-    }
