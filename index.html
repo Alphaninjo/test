@@ -44,7 +44,7 @@
 <body>
 
 <div id="container">
-  <div id="content" style="display: none;">
+  <div id="content">
     <!-- Content 1 -->
     <div id="content1" class="content-section active">
       <h2>Content Section 1</h2>
@@ -91,16 +91,16 @@
       div.classList.remove('active');
     });
 
-    // Hide content buttons
-    var contentButtons = document.getElementById('content-buttons');
-    if (contentButtons) {
-      contentButtons.style.display = 'none';
-    }
-
     // Show the selected content div
     var selectedContent = document.getElementById(contentId);
     if (selectedContent) {
       selectedContent.classList.add('active');
+    }
+
+    // Hide content buttons
+    var contentButtons = document.getElementById('content-buttons');
+    if (contentButtons) {
+      contentButtons.style.display = 'none';
     }
   }
 
