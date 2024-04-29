@@ -6,32 +6,93 @@
   <title>Show Different Content</title>
   <style>
     /* Add your CSS styles here */
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    #container {
+      max-width: 1920px;
+      width: 100%;
+      padding: 20px;
+    }
+
+    .content-section {
+      display: none;
+    }
+
+    .content-section.active {
+      display: block;
+    }
+
+    #content-buttons {
+      margin-bottom: 20px;
+    }
+
+    button {
+      margin-right: 10px;
+    }
   </style>
 </head>
 <body>
 
-<div id="content">
-  <!-- Default content -->
-  <p>This is the default content.</p>
-</div>
+<div id="container">
+  <div id="content">
+    <!-- Content 1 -->
+    <div id="content1" class="content-section active">
+      <h2>Content Section 1</h2>
+      <p>This is the content for section 1.</p>
+      <button onclick="showContentButtons()">Show Buttons</button>
+    </div>
 
-<button onclick="showContent('content1')">Show Content 1</button>
-<button onclick="showContent('content2')">Show Content 2</button>
-<button onclick="showContent('content3')">Show Content 3</button>
+    <!-- Content 2 -->
+    <div id="content2" class="content-section">
+      <h2>Content Section 2</h2>
+      <p>This is the content for section 2.</p>
+      <button onclick="showContentButtons()">Show Buttons</button>
+    </div>
+
+    <!-- Content 3 -->
+    <div id="content3" class="content-section">
+      <h2>Content Section 3</h2>
+      <p>This is the content for section 3.</p>
+      <button onclick="showContentButtons()">Show Buttons</button>
+    </div>
+  </div>
+
+  <div id="content-buttons">
+    <button onclick="showContent('content1')">Show Content 1</button>
+    <button onclick="showContent('content2')">Show Content 2</button>
+    <button onclick="showContent('content3')">Show Content 3</button>
+  </div>
+</div>
 
 <!-- Your JavaScript code here -->
 <script>
   function showContent(contentId) {
     // Hide all content divs
-    var allContentDivs = document.querySelectorAll('#content > div');
+    var allContentDivs = document.querySelectorAll('.content-section');
     allContentDivs.forEach(function(div) {
-      div.style.display = 'none';
+      div.classList.remove('active');
     });
 
     // Show the selected content div
     var selectedContent = document.getElementById(contentId);
     if (selectedContent) {
-      selectedContent.style.display = 'block';
+      selectedContent.classList.add('active');
+    }
+  }
+
+  function showContentButtons() {
+    // Show the content buttons div
+    var contentButtons = document.getElementById('content-buttons');
+    if (contentButtons) {
+      contentButtons.style.display = 'block';
     }
   }
 </script>
