@@ -7,75 +7,73 @@
   <link rel="stylesheet" href="style.css">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Bootstrap JS (optional, if you need Bootstrap JavaScript components) -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="custom-js.js"></script>
-  <script>
-    // Show the content buttons div
-    window.onload = function() {
-      var contentButtons = document.getElementById('content-buttons');
-      if (contentButtons) {
-        contentButtons.style.display = 'block';
-      }
-    };
-  </script>
 </head>
 <body>
-
-  <!-- Header -->
+  <!-- Header Section -->
   <div class="container-fluid">
-    <div class="row row-height bg-primary text-white custom-padding gradient-column">
-      <div class="col">
+    <div class="row bg-primary text-white custom-padding gradient-column">
+      <div class="col text-center">
         <h1 class="infographics-text">AW101</h1>
         <h1 class="infographics-text">Infographics</h1>
       </div>
     </div>
   </div>
 
-  <!-- Main Menu -->
-  <div class="container-fluid custom-padding">
+  <!-- Padding between Header and Main Content -->
+  <div class="container-fluid custom-padding"></div>
+
+  <!-- Main Content Section -->
+  <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <h2>Main Menu</h2>
-        <div class="row" id="cardGrid">
-          <!-- Cards will be dynamically added here -->
+      <!-- Menu Section -->
+      <div class="col-md-4">
+        <div id="cardGrid">
+          <!-- Your card elements go here -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Menu Item 1</h5>
+              <button onclick="showContent('content1')">Show Content 1</button>
+            </div>
+          </div>
+          <!-- Add more card elements as needed -->
+        </div>
+      </div>
+
+      <!-- Content Section -->
+      <div class="col-md-8">
+        <div id="container">
+          <!-- Content sections go here -->
+          <!-- Content 1 -->
+          <div id="content1" class="content-section">
+            <h2>Content Section 1</h2>
+            <p>This is the content for section 1.</p>
+            <button onclick="showContentButtons()">Show Buttons</button>
+          </div>
+          <!-- Add more content sections as needed -->
+
+          <!-- Content buttons -->
+          <div id="content-buttons" style="display: none;">
+            <button onclick="showContentButtons()">Back to Menu</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  
-<div id="container" style="display: none;">
-  <div id="content">
-    <!-- Content 1 -->
-    <div id="content1" class="content-section">
-      <h2>Content Section 1</h2>
-      <p>This is the content for section 1.</p>
-      <button onclick="showContentButtons()">Back to Main Menu</button>
-    </div>
 
-    <!-- Content 2 -->
-    <div id="content2" class="content-section">
-      <h2>Content Section 2</h2>
-      <p>This is the content for section 2.</p>
-      <button onclick="showContentButtons()">Back to Main Menu</button>
-    </div>
-
-    <!-- Content 3 -->
-    <div id="content3" class="content-section">
-      <h2>Content Section 3</h2>
-      <p>This is the content for section 3.</p>
-      <button onclick="showContentButtons()">Back to Main Menu</button>
-    </div>
-  </div>
-
-  <div id="content-buttons" style="display: none;">
-    <button onclick="showContent('content1')">Show Content 1</button>
-    <button onclick="showContent('content2')">Show Content 2</button>
-    <button onclick="showContent('content3')">Show Content 3</button>
-  </div>
-</div>
-
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Custom JS -->
+  <script src="custom-js.js"></script>
+  <script>
+    // Show the content buttons div
+    window.onload = function() {
+      var contentButtons = document.getElementById('content-buttons');
+      if (contentButtons) {
+        contentButtons.style.display = 'none';
+      }
+    };
+  </script>
 </body>
 </html>
