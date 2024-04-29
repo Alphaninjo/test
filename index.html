@@ -4,42 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Show Different Content</title>
-  <style>
-    /* Add your CSS styles here */
-    body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #f0f0f0;
-    }
-
-    #container {
-      max-width: 1920px;
-      width: 100%;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .content-section {
-      display: none;
-      margin-bottom: 20px;
-    }
-
-    .content-section.active {
-      display: block;
-    }
-
-    #content-buttons {
-      margin-bottom: 20px;
-    }
-
-    button {
-      margin-right: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <script>
+    // Show the content buttons div
+    window.onload = function() {
+      var contentButtons = document.getElementById('content-buttons');
+      if (contentButtons) {
+        contentButtons.style.display = 'block';
+      }
+    };
+  </script>
 </head>
 <body>
 
@@ -73,51 +48,6 @@
     <button onclick="showContent('content3')">Show Content 3</button>
   </div>
 </div>
-
-<!-- Your JavaScript code here -->
-<script>
-  window.onload = function() {
-    // Show the content buttons div
-    var contentButtons = document.getElementById('content-buttons');
-    if (contentButtons) {
-      contentButtons.style.display = 'block';
-    }
-  };
-
-  function showContent(contentId) {
-    // Hide all content divs
-    var allContentDivs = document.querySelectorAll('.content-section');
-    allContentDivs.forEach(function(div) {
-      div.classList.remove('active');
-    });
-
-    // Show the selected content div
-    var selectedContent = document.getElementById(contentId);
-    if (selectedContent) {
-      selectedContent.classList.add('active');
-    }
-
-    // Hide content buttons
-    var contentButtons = document.getElementById('content-buttons');
-    if (contentButtons) {
-      contentButtons.style.display = 'none';
-    }
-  }
-
-  function showContentButtons() {
-    // Hide all content divs
-    var allContentDivs = document.querySelectorAll('.content-section');
-    allContentDivs.forEach(function(div) {
-      div.classList.remove('active');
-    });
-
-    // Show the content buttons div
-    var contentButtons = document.getElementById('content-buttons');
-    if (contentButtons) {
-      contentButtons.style.display = 'block';
-    }
-  }
-</script>
 
 </body>
 </html>
