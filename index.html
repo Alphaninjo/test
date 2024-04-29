@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Show Different Content</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- Bootstrap JS (optional, if you need Bootstrap JavaScript components) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
@@ -22,7 +24,7 @@
 </head>
 <body>
 
-  <!-- Row 1 -->
+  <!-- Header -->
   <div class="container-fluid">
     <div class="row row-height bg-primary text-white custom-padding gradient-column">
       <div class="col">
@@ -32,34 +34,43 @@
     </div>
   </div>
 
-  <!-- Padding between rows -->
-  <div class="container-fluid custom-padding"></div>
+  <!-- Main Menu -->
+  <div class="container-fluid custom-padding">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Main Menu</h2>
+        <div class="row" id="cardGrid">
+          <!-- Cards will be dynamically added here -->
+        </div>
+      </div>
+    </div>
+  </div>
   
-<div id="container">
+<div id="container" style="display: none;">
   <div id="content">
     <!-- Content 1 -->
     <div id="content1" class="content-section">
       <h2>Content Section 1</h2>
       <p>This is the content for section 1.</p>
-      <button onclick="showContentButtons()">Show Buttons</button>
+      <button onclick="showContentButtons()">Back to Main Menu</button>
     </div>
 
     <!-- Content 2 -->
     <div id="content2" class="content-section">
       <h2>Content Section 2</h2>
       <p>This is the content for section 2.</p>
-      <button onclick="showContentButtons()">Show Buttons</button>
+      <button onclick="showContentButtons()">Back to Main Menu</button>
     </div>
 
     <!-- Content 3 -->
     <div id="content3" class="content-section">
       <h2>Content Section 3</h2>
       <p>This is the content for section 3.</p>
-      <button onclick="showContentButtons()">Show Buttons</button>
+      <button onclick="showContentButtons()">Back to Main Menu</button>
     </div>
   </div>
 
-  <div id="content-buttons">
+  <div id="content-buttons" style="display: none;">
     <button onclick="showContent('content1')">Show Content 1</button>
     <button onclick="showContent('content2')">Show Content 2</button>
     <button onclick="showContent('content3')">Show Content 3</button>
