@@ -1,4 +1,39 @@
-    // Function to fetch CSV file and process data
+function showContent(contentId) {
+  // Hide all content divs
+  var allContentDivs = document.querySelectorAll('.content-section');
+  allContentDivs.forEach(function(div) {
+    div.classList.remove('active');
+  });
+
+  // Show the selected content div
+  var selectedContent = document.getElementById(contentId);
+  if (selectedContent) {
+    selectedContent.classList.add('active');
+  }
+
+  // Hide content buttons
+  var contentButtons = document.getElementById('content-buttons');
+  if (contentButtons) {
+    contentButtons.style.display = 'none';
+  }
+}
+
+function showContentButtons() {
+  // Hide all content divs
+  var allContentDivs = document.querySelectorAll('.content-section');
+  allContentDivs.forEach(function(div) {
+    div.classList.remove('active');
+  });
+
+  // Show the content buttons div
+  var contentButtons = document.getElementById('content-buttons');
+  if (contentButtons) {
+    contentButtons.style.display = 'block';
+  }
+}
+
+
+// Function to fetch CSV file and process data
     function fetchCSV(filePath, callback) {
       fetch(filePath)
         .then(response => response.text())
