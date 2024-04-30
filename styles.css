@@ -23,7 +23,7 @@
 }
 
 /* Style the button that displays the dropdown menu */
-.dropdown-menu .dropdown-button {
+.dropdown .dropdown-button {
   background-color: #4CAF50; /* Green background */
   color: white; /* White text */
   padding: 10px;
