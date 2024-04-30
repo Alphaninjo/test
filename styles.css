@@ -21,3 +21,7 @@
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
   margin-top: 20px;
 }
+.dropdown-row {
+  height: 50px;
+  width: 200px;
+}
